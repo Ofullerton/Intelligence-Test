@@ -10,8 +10,27 @@
   <body>
     <div class="heading">
       <h1> <b>Intelligence Test</b> </h1>
-      <p class="paragraphs"> When are you are finished with the question press continue.</p>
+      <p class="paragraphs"> When you are finished with the question press continue.</p>
       <button type="button" class="buttons" onclick=" "> Continue </button>
     </div>
+    <div class="form-group" id="usernameGroup">
+      <label for="Answer" class="AnswerBox">Answer</label>
+        <div class="col-sm-2">
+          <input type="text" id="answer" class="form-control input-md"
+          placeholder="Your Answer Here"oninput="validateAnswer();"/>
+          <span id="IncorrectAnswer" class="control-label hidden-message">
+          </span>
+          <span id="answerSuccess" class="control-label hidden-message">
+          </span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="button" class="btn btn-primary col-sm-1"
+            onclick="register();">
+            Check Your Answer
+          </button>
+        </div>
+      </div>
   </body>
 </html>
