@@ -1,4 +1,4 @@
-function continueButton (){
+function continueButton(){
  window.location.href = "index2.html";
  }
 
@@ -15,7 +15,8 @@ function validateAnswer(){
     document.getElementById("answerError").classList.remove("shown-message");
     document.getElementById("answerSuccess").classList.add("hidden-message");
     }
-    else (answerEntered !== 1738) {
+    else (answerEntered !== 1738)
+  {
     document.getElementById("answerGroup").classList.add("has-error");
     document.getElementById("answerGroup").classList.remove("has-success");
     document.getElementById("answerError").innerHTML="Answer is not correct.";

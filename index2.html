@@ -11,7 +11,7 @@
     <div class="heading">
       <h1> <b>Intelligence Test Part 1</b> </h1>
       <p class="paragraphs"> When you are finished with the question press continue</p>
-      <button type="button" class="buttons" onclick=" "> Continue </button>
+      <button type="button" class="buttons" onclick="continueButton()"> Continue </button>
     </div>
     <div>
       <p class="question1"> 1436+1 = 1537 </p>
@@ -22,7 +22,7 @@
       <div class="form-group" id="answerGroup">
         <label for="Answer">Answer</label>
           <div class="col-sm-2">
-              <input type="text" id="answer" class="form-control input-md"
+              <input type="text" value="submit" id="answer" class="form-control input-md"
               placeholder="Your Answer Here" oninput="validateAnswer();"/>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
