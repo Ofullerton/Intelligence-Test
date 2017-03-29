@@ -13,43 +13,32 @@
       <p class="paragraphs"> When you are finished with the question press continue</p>
       <button type="button" class="buttons" onclick=" "> Continue </button>
     </div>
-    <form>
     <div>
-      <p> 1436+1 = 1537
-          1132-1 = 1031
-          425-2= 223
-          -80+4= 324
-          2243-2 = 2041
+      <p class="question1"> 1436+1 = 1537 </p>
+      <p class="question1"> 1132-1 = 1031 </p>
+      <p class="question1"> 425-2= 223 </p>
+      <p class="question1">-80+4= 324 </p>
+      <p class="question1"> 2243-2 = 2041</p>
       <div class="form-group" id="answerGroup">
         <label for="Answer">Answer</label>
           <div class="col-sm-2">
               <input type="text" id="answer" class="form-control input-md"
               placeholder="Your Answer Here" oninput="validateAnswer();"/>
-
-              <span id="answerError" class="control-label hidden-message">
-                Error Placeholder (hidden)
-              </span>
-                <span id="answerSuccess" class="control-label hidden-message">
-                  Error Placeholder (hidden)
-              </span>
-
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
                 <button type="button" class="btn btn-primary col-sm-1"
                   onclick="validateAnswer();">
                   Check Your Answer
                 </button>
+                <span id="answerError" class="control-label hidden-message">
+                  You got the answer right
+                </span>
+                <span id="answerSuccess" class="control-label hidden-message">
+                  You got the answer wrong
               </div>
             </div>
-            <span id="IncorrectAnswer" class="control-label hidden-message">
-
-            </span>
-            <span id="answerSuccess" class="control-label hidden-message">
-
-            </span>
           </div>
         </div>
-      </form>
     </div>
   </body>
 </html>

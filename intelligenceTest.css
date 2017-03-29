@@ -19,3 +19,9 @@ span.hidden-message{
 span.shown-message{
   opacity: 1.0;
 }
+.question1{
+  text-align: center;
+}
+button{
+  text-align: center;
+}
