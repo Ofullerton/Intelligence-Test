@@ -11,7 +11,6 @@
     <div class="heading">
       <h1> <b>Intelligence Test Part 2</b> </h1>
       <p class="paragraphs"> When you are finished with the question press continue</p>
-      <button type="button" class="buttons" onclick="continueButton()"> Continue </button>
     </div>
     <div>
       <p class="question3"> 12+4 = 483 </p>
@@ -19,6 +18,8 @@
       <p class="question3"> 40+4= 12010 </p>
       <p class="question3"> 42+6= 2527 </p>
       <p class="question3"> 6+3 = 182</p>
+
+      <p class="question1"> What is th value of x?</p>
       <div class="form-group" id="answerGroup">
         <label for="Answer">Answer</label>
           <div class="col-sm-2">
@@ -26,10 +27,7 @@
               placeholder="Your Answer Here" oninput="validateAnswer();"/>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" class="btn btn-primary col-sm-1"
-                  onclick="validateAnswer();">
-                  Check Your Answer
-                </button>
+                <button type="button" class="buttons" onclick="continueButton2()"> Continue </button>
                 <span id="answerError" class="control-label hidden-message">
                   You got the answer right
                 </span>
