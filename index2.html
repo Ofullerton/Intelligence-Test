@@ -11,6 +11,7 @@
     <div class="heading">
       <h1> <b>Intelligence Test Part 1</b> </h1>
       <p class="paragraphs"> When you are finished with the question press continue</p>
+      <button type="button" class="buttons" onclick="continueButton1()"> Continue </button>
     </div>
     <div>
       <p class="question1"> 1436+1 = 1537 </p>
@@ -19,7 +20,7 @@
       <p class="question1">-80+4 = 324 </p>
       <p class="question1"> 2243-2 = 2041</p>
       <p class="question1"> 2445-2 = x </p>
-      <p class="question1"> What is th value of x?</p>
+      <p class="question1"> What is the value of x?</p>
       <div class="form-group" id="answerGroup">
         <label for="Answer">Answer</label>
           <div class="col-sm-2">
@@ -27,12 +28,12 @@
               placeholder="Your Answer Here" oninput="validateAnswer();">
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" class="buttons" onclick="continueButton1()"> Continue </button>
+                <button type="button" class="buttons" onclick="validateAnswer"> Check Answer </button>
                 <span id="answerError" class="control-label hidden-message">
-                  You got the answer right
-                </span>
-                <span id="answerSuccess" class="control-label hidden-message">
                   You got the answer wrong
+                <span id="answerSuccess" class="control-label hidden-message">
+                    
+                </span>
               </div>
             </div>
           </div>

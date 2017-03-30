@@ -11,6 +11,7 @@
     <div class="heading">
       <h1> <b>Intelligence Test Part 3</b> </h1>
       <p class="paragraphs"> When you are finished with the question press continue</p>
+      <button type="button" class="buttons" onclick="continueButton3()"> Continue </button>
     </div>
     <div>
       <p class="question3"> 42 +36 = 39 </p>
@@ -19,20 +20,19 @@
       <p class="question3"> 10 + 8 = 9</p>
       <p class="question3"> 6 + 4 = 5</p>
       <p class="question3"> 20 - 10 = 5 </p>
-      <p class="question1"> What is th value of x?</p>
+      <p class="question1"> What is the value of x?</p>
       <div class="form-group" id="answerGroup">
         <label for="Answer">Answer</label>
           <div class="col-sm-2">
-              <input type="text" value="submit" id="answer" class="form-control input-md"
+              <input type="text" id="answer" class="form-control input-md"
               placeholder="Your Answer Here"/>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                  <button type="button" class="buttons" onclick="continueButton3()"> Continue </button>
+                  <button type="button" class="buttons" onclick="continueButton3()"> Check Answer </button>
                 <span id="answerError" class="control-label hidden-message">
-                  You got the answer right
+                  You got the answer wrong
                 </span>
                 <span id="answerSuccess" class="control-label hidden-message">
-                  You got the answer wrong
                 </span>
               </div>
             </div>

@@ -11,28 +11,29 @@
     <div class="heading">
       <h1> <b>Intelligence Test Part 2</b> </h1>
       <p class="paragraphs"> When you are finished with the question press continue</p>
+      <button type="button" class="buttons" onclick="continueButton2()"> Continue </button>
     </div>
     <div>
-      <p class="question3"> 12+4 = 483 </p>
-      <p class="question3"> 10+5 = 502 </p>
-      <p class="question3"> 40+4= 12010 </p>
-      <p class="question3"> 42+6= 2527 </p>
-      <p class="question3"> 6+3 = 182</p>
-
-      <p class="question1"> What is th value of x?</p>
+      <p class="question2"> 12+4 = 483 </p>
+      <p class="question2"> 10+5 = 502 </p>
+      <p class="question2"> 40+4= 12010 </p>
+      <p class="question2"> 42+6= 2527 </p>
+      <p class="question2"> 6+3 = 182</p>
+      <p class="question2"> 7+5 = x </P>
+      <p class="question2"> What is the value of x?</p>
       <div class="form-group" id="answerGroup">
         <label for="Answer">Answer</label>
           <div class="col-sm-2">
-              <input type="text" value="submit" id="answer" class="form-control input-md"
-              placeholder="Your Answer Here" oninput="validateAnswer();"/>
+              <input type="text" id="answer2" class="form-control input-md"
+              placeholder="Your Answer Here" oninput="validateAnswer2();"/>
             <div class="form-group">
               <div class="col-sm-offset-2 col-sm-10">
-                <button type="button" class="buttons" onclick="continueButton2()"> Continue </button>
+                <button type="button" class="buttons" onclick="validateAnswer2"> Check Answer </button>
                 <span id="answerError" class="control-label hidden-message">
-                  You got the answer right
-                </span>
-                <span id="answerSuccess" class="control-label hidden-message">
                   You got the answer wrong
+                <span id="answerSuccess" class="control-label hidden-message">
+                    
+                </span>
               </div>
             </div>
           </div>
